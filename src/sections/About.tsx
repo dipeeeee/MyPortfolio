@@ -2,7 +2,8 @@
 
 import { useMemo, useState, memo, useEffect, useRef } from "react";
 import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-motion";
-import { FaLinkedin, FaInstagram, FaYoutube, FaMedium, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import MyImage5 from "../assets/MyImage5.jpg";
 
 import type { Variants } from "framer-motion";
 import {
@@ -247,7 +248,7 @@ const AnimatedProfile = memo(function AnimatedProfile({ accents }: { accents: st
               className="w-full h-full rounded-full overflow-hidden bg-center bg-cover"
               style={{
                 backgroundImage:
-                  "url(https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop)",
+                `url(${MyImage5})`,
                 transform: "translateZ(28px) scale(1.02)",
               }}
             />
